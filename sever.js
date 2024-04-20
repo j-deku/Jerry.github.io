@@ -68,6 +68,9 @@ app.get("/img/Jerry-photo.jpg",(_req,res)=>{
 app.get('/toggler.html',(_req,res)=>{
     res.sendFile(path.join(__dirname,'toggler.html'));
 })
+app.get('/favicon.ico',(_req,res)=>{
+    res.sendFile(path.join,(__dirname, 'favicon.ico'));
+})
 function generateOTP(){
     return Math.floor(Math.random() * 900000 + 100000);
 }
